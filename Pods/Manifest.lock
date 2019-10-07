@@ -1,0 +1,16 @@
+PODS:
+  - C4 (3.0.1)
+
+DEPENDENCIES:
+  - C4
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - C4
+
+SPEC CHECKSUMS:
+  C4: 8a51425000f760d5e89ba294a8284467a1bd1231
+
+PODFILE CHECKSUM: 78f667a2705ccdd13e7ceefc2007dea0396d06e7
+
+COCOAPODS: 1.7.5
