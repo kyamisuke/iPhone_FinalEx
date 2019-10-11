@@ -10,6 +10,15 @@
 		8F07AA13234735F600E8BA2B /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F07AA12234735F600E8BA2B /* StartViewController.swift */; };
 		8F07AA182348B2D300E8BA2B /* media.io_BlackVelvet.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F07AA172348B2D300E8BA2B /* media.io_BlackVelvet.mp3 */; };
 		8F07AA1A2348B36500E8BA2B /* media.io_obogHouse .mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F07AA192348B36500E8BA2B /* media.io_obogHouse .mp3 */; };
+		8F470FDF234E58A60003B8D5 /* glitch-mid.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F470FDC234E58A60003B8D5 /* glitch-mid.png */; };
+		8F470FE0234E58A60003B8D5 /* glitch-top.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F470FDD234E58A60003B8D5 /* glitch-top.png */; };
+		8F470FE1234E58A60003B8D5 /* glitch-bottom.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F470FDE234E58A60003B8D5 /* glitch-bottom.png */; };
+		8F65209B234B335E00CCEDF3 /* GlitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F65209A234B335E00CCEDF3 /* GlitchViewController.swift */; };
+		8F65209D234B338B00CCEDF3 /* ObjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F65209C234B338B00CCEDF3 /* ObjectViewController.swift */; };
+		8F65209F234B50C100CCEDF3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F65209E234B50C000CCEDF3 /* MainViewController.swift */; };
+		8F6520A7234B9BAD00CCEDF3 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F6520A5234B9BAD00CCEDF3 /* icon.png */; };
+		8F6520AF234BB87600CCEDF3 /* glitch.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F6520AE234BB87600CCEDF3 /* glitch.png */; };
+		8F6520B1234BBA6E00CCEDF3 /* audioVisualizer.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F6520B0234BBA6E00CCEDF3 /* audioVisualizer.png */; };
 		8F9ACDCD2341DE6000BD19A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9ACDCC2341DE6000BD19A9 /* AppDelegate.swift */; };
 		8F9ACDCF2341DE6000BD19A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9ACDCE2341DE6000BD19A9 /* SceneDelegate.swift */; };
 		8F9ACDD12341DE6000BD19A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9ACDD02341DE6000BD19A9 /* ViewController.swift */; };
@@ -50,6 +59,17 @@
 		8F07AA12234735F600E8BA2B /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		8F07AA172348B2D300E8BA2B /* media.io_BlackVelvet.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = media.io_BlackVelvet.mp3; sourceTree = "<group>"; };
 		8F07AA192348B36500E8BA2B /* media.io_obogHouse .mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "media.io_obogHouse .mp3"; sourceTree = "<group>"; };
+		8F470FDC234E58A60003B8D5 /* glitch-mid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glitch-mid.png"; sourceTree = "<group>"; };
+		8F470FDD234E58A60003B8D5 /* glitch-top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glitch-top.png"; sourceTree = "<group>"; };
+		8F470FDE234E58A60003B8D5 /* glitch-bottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glitch-bottom.png"; sourceTree = "<group>"; };
+		8F470FE323501EED0003B8D5 /* audioVisualizer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = audioVisualizer.png; sourceTree = "<group>"; };
+		8F470FE423501EF40003B8D5 /* audioVisualizer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = audioVisualizer.png; path = ../../../../../audioVisualizer.png; sourceTree = "<group>"; };
+		8F65209A234B335E00CCEDF3 /* GlitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlitchViewController.swift; sourceTree = "<group>"; };
+		8F65209C234B338B00CCEDF3 /* ObjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectViewController.swift; sourceTree = "<group>"; };
+		8F65209E234B50C000CCEDF3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		8F6520A5234B9BAD00CCEDF3 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		8F6520AE234BB87600CCEDF3 /* glitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glitch.png; sourceTree = "<group>"; };
+		8F6520B0234BBA6E00CCEDF3 /* audioVisualizer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = audioVisualizer.png; path = ../../../../audioVisualizer.png; sourceTree = "<group>"; };
 		8F9ACDC92341DE6000BD19A9 /* c4_practise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = c4_practise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F9ACDCC2341DE6000BD19A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F9ACDCE2341DE6000BD19A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +140,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8F470FE223501ECE0003B8D5 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				8F470FDE234E58A60003B8D5 /* glitch-bottom.png */,
+				8F470FDC234E58A60003B8D5 /* glitch-mid.png */,
+				8F470FDD234E58A60003B8D5 /* glitch-top.png */,
+				8F470FE323501EED0003B8D5 /* audioVisualizer.png */,
+				8F6520A5234B9BAD00CCEDF3 /* icon.png */,
+				8F6520AE234BB87600CCEDF3 /* glitch.png */,
+				8F470FE423501EF40003B8D5 /* audioVisualizer.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		8F9ACDC02341DE6000BD19A9 = {
 			isa = PBXGroup;
 			children = (
@@ -145,16 +179,21 @@
 		8F9ACDCB2341DE6000BD19A9 /* c4_practise */ = {
 			isa = PBXGroup;
 			children = (
+				8F470FE223501ECE0003B8D5 /* images */,
+				8F6520B0234BBA6E00CCEDF3 /* audioVisualizer.png */,
 				8F07AA192348B36500E8BA2B /* media.io_obogHouse .mp3 */,
 				8F07AA172348B2D300E8BA2B /* media.io_BlackVelvet.mp3 */,
 				8F9ACDCC2341DE6000BD19A9 /* AppDelegate.swift */,
 				8F9ACDCE2341DE6000BD19A9 /* SceneDelegate.swift */,
-				8F9ACDD02341DE6000BD19A9 /* ViewController.swift */,
 				8F9ACDD22341DE6000BD19A9 /* Main.storyboard */,
 				8F9ACDD52341DE6100BD19A9 /* Assets.xcassets */,
 				8F9ACDD72341DE6100BD19A9 /* LaunchScreen.storyboard */,
 				8F9ACDDA2341DE6100BD19A9 /* Info.plist */,
 				8F07AA12234735F600E8BA2B /* StartViewController.swift */,
+				8F65209A234B335E00CCEDF3 /* GlitchViewController.swift */,
+				8F9ACDD02341DE6000BD19A9 /* ViewController.swift */,
+				8F65209C234B338B00CCEDF3 /* ObjectViewController.swift */,
+				8F65209E234B50C000CCEDF3 /* MainViewController.swift */,
 			);
 			path = c4_practise;
 			sourceTree = "<group>";
@@ -285,7 +324,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F470FE0234E58A60003B8D5 /* glitch-top.png in Resources */,
+				8F6520B1234BBA6E00CCEDF3 /* audioVisualizer.png in Resources */,
+				8F6520AF234BB87600CCEDF3 /* glitch.png in Resources */,
+				8F6520A7234B9BAD00CCEDF3 /* icon.png in Resources */,
+				8F470FE1234E58A60003B8D5 /* glitch-bottom.png in Resources */,
 				8F9ACDD92341DE6100BD19A9 /* LaunchScreen.storyboard in Resources */,
+				8F470FDF234E58A60003B8D5 /* glitch-mid.png in Resources */,
 				8F9ACDD62341DE6100BD19A9 /* Assets.xcassets in Resources */,
 				8F07AA182348B2D300E8BA2B /* media.io_BlackVelvet.mp3 in Resources */,
 				8F07AA1A2348B36500E8BA2B /* media.io_obogHouse .mp3 in Resources */,
@@ -400,10 +445,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F65209F234B50C100CCEDF3 /* MainViewController.swift in Sources */,
+				8F65209B234B335E00CCEDF3 /* GlitchViewController.swift in Sources */,
 				8F9ACDD12341DE6000BD19A9 /* ViewController.swift in Sources */,
 				8F07AA13234735F600E8BA2B /* StartViewController.swift in Sources */,
 				8F9ACDCD2341DE6000BD19A9 /* AppDelegate.swift in Sources */,
 				8F9ACDCF2341DE6000BD19A9 /* SceneDelegate.swift in Sources */,
+				8F65209D234B338B00CCEDF3 /* ObjectViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

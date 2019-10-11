@@ -9,7 +9,7 @@
 import UIKit
 import C4
 
-class ViewController: CanvasController {
+public class  ViewController: CanvasController {
     // MARK: - Variable
     var player: AudioPlayer!
     
@@ -42,14 +42,18 @@ class ViewController: CanvasController {
     var maxPeak = (30.981050491333, 31.1506500244141)
     var avgPeak = (63.9939880371094, 63.8977127075195)
     
+    var animCount = 0
+    
     // MARK: - Setup
-    override func setup() {
+    override public func setup() {
         canvas.backgroundColor = Color(red: 0.1, green: 0.1, blue: 0.1, alpha: 1.0)
         setupShapes()
         setupPlayer()
         setupTimer()
-                
+        
         backgroundShape()
+        backgroundShape2()
+        mofing()
     }
     
     // MARK: - Shape
@@ -75,18 +79,18 @@ class ViewController: CanvasController {
         var waves: [Point] = []
         waves.append(Point())
         for i in 0...500 {
-            waves.append(Point(i, Int(sin(Double(i)/180.0 * Double.pi)*100)))
+            waves.append(Point(i, Int(sin(Double(i)/180.0 * Double.pi)*50)))
         }
         let polygon = Polygon(waves)
         polygon.center = canvas.center
         polygon.lineWidth = 0.5
-        polygon.strokeColor = Color(red: 0.2, green: 0.9, blue: 0.5, alpha: 1.0)
+        polygon.strokeColor = Color(red: 0.2, green: 0.9, blue: 0.5, alpha: 0.6)
         canvas.add(polygon)
         
         var waves2: [Point] = []
         waves2.append(Point())
         for i in 0...500 {
-            waves2.append(Point(i, Int(sin(Double(i)/180.0 * Double.pi)*100)))
+            waves2.append(Point(i, Int(sin(Double(i)/180.0 * Double.pi)*50)))
         }
         let polygon2 = Polygon(waves2)
         polygon2.center = canvas.center
@@ -97,7 +101,7 @@ class ViewController: CanvasController {
         var waves3: [Point] = []
         waves3.append(Point())
         for i in 0...500 {
-            waves3.append(Point(i, Int(sin(Double(i)/180.0 * Double.pi)*100)))
+            waves3.append(Point(i, Int(sin(Double(i)/180.0 * Double.pi)*50)))
         }
         let polygon3 = Polygon(waves3)
         polygon3.center = canvas.center
@@ -118,14 +122,14 @@ class ViewController: CanvasController {
         
         b.repeats = true
         b.autoreverses = true
-
+        
         let c = ViewAnimation(duration: 5.0) {
             polygon3.strokeStart = 1.0
         }
         
         c.repeats = true
         c.autoreverses = true
-
+        
         let grp = ViewAnimationGroup(animations: [a, b, c])
         grp.animate()
     }
@@ -134,57 +138,57 @@ class ViewController: CanvasController {
         var waves: [Point] = []
         waves.append(Point())
         for i in 0...500 {
-            waves.append(Point(i, Int(sin(Double(i)/180.0 * Double.pi + sin(Double(i)/180.0 * Double.pi + cos(Double(i)/180.0 * Double.pi)))*100)))
+            waves.append(Point(i, Int(sin(Double(i)/180.0 * Double.pi + sin(Double(i)/180.0 * Double.pi + cos(Double(i)/180.0 * Double.pi)))*60)))
         }
         let polygon = Polygon(waves)
         polygon.center = canvas.center
         polygon.lineWidth = 0.5
-        polygon.strokeColor = Color(red: 0.2, green: 0.9, blue: 0.5, alpha: 1.0)
+        polygon.strokeColor = Color(red: 0.86, green: 0.62, blue: 0.92, alpha: 0.6)
         canvas.add(polygon)
         
         var waves2: [Point] = []
         waves2.append(Point())
         for i in 0...500 {
-            waves2.append(Point(i, Int(sin(Double(i)/180.0 * Double.pi + sin(Double(i)/180.0 * Double.pi + cos(Double(i)/180.0 * Double.pi)))*100)))
+            waves2.append(Point(i, Int(sin(Double(i)/180.0 * Double.pi + sin(Double(i)/180.0 * Double.pi + cos(Double(i)/180.0 * Double.pi)))*60)))
         }
         let polygon2 = Polygon(waves2)
         polygon2.center = canvas.center
         polygon2.lineWidth = 6.0
-        polygon2.strokeColor = Color(red: 0.2, green: 0.9, blue: 0.5, alpha: 0.1)
+        polygon2.strokeColor = Color(red: 0.86, green: 0.62, blue: 0.92, alpha: 0.1)
         canvas.add(polygon2)
         
         var waves3: [Point] = []
         waves3.append(Point())
         for i in 0...500 {
-            waves3.append(Point(i, Int(sin(Double(i)/180.0 * Double.pi + sin(Double(i)/180.0 * Double.pi + cos(Double(i)/180.0 * Double.pi)))*100)))
+            waves3.append(Point(i, Int(sin(Double(i)/180.0 * Double.pi + sin(Double(i)/180.0 * Double.pi + cos(Double(i)/180.0 * Double.pi)))*60)))
         }
         let polygon3 = Polygon(waves3)
         polygon3.center = canvas.center
         polygon3.lineWidth = 12.0
-        polygon3.strokeColor = Color(red: 0.2, green: 0.9, blue: 0.5, alpha: 0.05)
+        polygon3.strokeColor = Color(red: 0.86, green: 0.62, blue: 0.92, alpha: 0.05)
         canvas.add(polygon3)
         
-        let a = ViewAnimation(duration: 5.0) {
-            polygon.strokeStart = 1.0
+        let a = ViewAnimation(duration: 7.0) {
+            polygon.strokeEnd = 0.0
         }
         
         a.repeats = true
         a.autoreverses = true
         
-        let b = ViewAnimation(duration: 5.0) {
-            polygon2.strokeStart = 1.0
+        let b = ViewAnimation(duration: 7.0) {
+            polygon2.strokeEnd = 0.0
         }
         
         b.repeats = true
         b.autoreverses = true
-
-        let c = ViewAnimation(duration: 5.0) {
-            polygon3.strokeStart = 1.0
+        
+        let c = ViewAnimation(duration: 7.0) {
+            polygon3.strokeEnd = 0.0
         }
         
         c.repeats = true
         c.autoreverses = true
-
+        
         let grp = ViewAnimationGroup(animations: [a, b, c])
         grp.animate()
     }
@@ -398,4 +402,118 @@ class ViewController: CanvasController {
         }
         timer.start()
     }
+    
+    func mofing() {
+        let c = Circle(center: canvas.center, radius: 20)
+        c.strokeColor = Color(red: 1.0, green: 0, blue: 0, alpha: 0.0)
+        c.fillColor = Color(red: 1.0, green: 0, blue: 0, alpha: 0.0)
+        
+        
+        let r = Rectangle(frame: Rect(0, 0, canvas.width, canvas.height))
+        r.center = canvas.center
+        r.strokeColor = Color(red: 0, green: 0, blue: 0, alpha: 0)
+        r.fillColor = Color(red: 0, green: 0, blue: 0, alpha: 0)
+        canvas.add(r)
+        
+        let glImg = Image("glitch")!
+        glImg.constrainsProportions = true
+        glImg.width = 40
+        glImg.center = canvas.center
+        glImg.apply(Bloom())
+        
+        let avImg = Image("audioVisualizer")!
+        avImg.constrainsProportions = true
+        avImg.width = 40
+        avImg.center = canvas.center
+        avImg.apply(Bloom())
+        
+        let rAnimIn = ViewAnimation(duration: 0.5, animations: {
+            r.fillColor = Color(red: 0, green: 0, blue: 0, alpha: 0.6)
+        })
+        
+        let rAnimOut = ViewAnimation(duration: 0.5, animations: {
+            r.fillColor = Color(red: 0, green: 0, blue: 0, alpha: 0.0)
+        })
+        
+        let avImgAnimIn = ViewAnimation(duration: 0.5, animations: {
+            avImg.width = 80
+            avImg.center = self.canvas.center
+        })
+        
+        let avImgAnimOut = ViewAnimation(duration: 0.5, animations: {
+            avImg.width = 40
+            avImg.center = self.canvas.center
+        })
+        let glImgAnimIn = ViewAnimation(duration: 0.5, animations: {
+            glImg.width = 80
+            glImg.center = self.canvas.center
+            glImg.center.x +=  100
+        })
+        
+        let glImgAnimOut = ViewAnimation(duration: 0.5, animations: {
+            glImg.width = 40
+            glImg.center = self.canvas.center
+        })
+        
+        let glImgAnimChoice = ViewAnimation(duration: 0.5, animations: {
+            glImg.width = 100
+            glImg.center = self.canvas.center
+            glImg.center.x +=  100
+        })
+        
+        let glImgAnimNotChoice = ViewAnimation(duration: 0.5, animations: {
+            glImg.width = 80
+            glImg.center = self.canvas.center
+            glImg.center.x +=  100
+        })
+                
+        c.addLongPressGestureRecognizer { locations, center, state in
+            let fingerPos = center.x+self.canvas.center.x/2+80
+            print("locations: \(locations) center: \(fingerPos) glImg: \(glImg.center)")
+            switch state {
+                case .possible:
+                    break
+                case .began:
+                    print("begin")
+                    ViewAnimationGroup(animations: [rAnimIn, avImgAnimIn, glImgAnimIn]).animate()
+                    break
+                case .changed:
+                    if glImg.center.x-40 < fingerPos &&  fingerPos < glImg.center.x+40 {
+                        glImgAnimChoice.animate()
+                    } else {
+                        glImgAnimNotChoice.animate()
+                    }
+                    break
+                case .ended:
+                    print("end")
+                    if glImg.center.x-40 < fingerPos &&  fingerPos < glImg.center.x+40 {
+                        let glView = GlitchViewController()
+                        self.dismiss(animated: false, completion: nil)
+                        self.present(glView, animated: false, completion: nil)
+                        ViewAnimationGroup(animations: [rAnimOut, avImgAnimOut, glImgAnimOut]).animate()
+                    } else {
+                        ViewAnimationGroup(animations: [rAnimOut, avImgAnimOut, glImgAnimOut]).animate()
+                    }
+                case .cancelled:
+                    break
+                case .failed:
+                    break
+                @unknown default:
+                    break
+            }
+        }
+        canvas.add(glImg)
+        canvas.add(avImg)
+        canvas.add(c)
+    }
 }
+
+
+
+
+/*
+ - 一つの画面で切り替え
+ - シーン切り替え周りは、extensionを使って、ファイルをまとめて見やすく整理すると良い
+ - 先に切り替えだけやっとくと良いかも
+ - 操作がかなり直感的になるので、導線の要素を残すと良い（cosmosでいうと真ん中のまる、あるいはhelpボタン）
+ */
